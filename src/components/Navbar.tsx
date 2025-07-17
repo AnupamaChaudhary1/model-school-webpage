@@ -45,7 +45,8 @@ export const Navbar = () => {
           <div className="flex items-center space-x-4">
             <div className="w-14 h-14 rounded-full overflow-hidden shadow-lg border-2 border-purple-300/50 dark:border-purple-600/50 ring-2 ring-purple-200/30 dark:ring-purple-700/30">
               <img 
-                src="/pic-uploads/a9eadc53-a8d4-4461-98c9-539c10a46824.png" 
+                // src="/pic-uploads/a9eadc53-a8d4-4461-98c9-539c10a46824.png" 
+                src={`${import.meta.env.BASE_URL}pic-uploads/a9eadc53-a8d4-4461-98c9-539c10a46824.png`} 
                 alt="Model English Boarding School Logo"
                 className="w-full h-full object-cover"
                 style={{ imageRendering: 'crisp-edges' }}

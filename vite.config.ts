@@ -5,7 +5,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/model-school-webpage/", // 👈 Add this line
+  base: "/", // 👈 Add this line
   server: {
     host: "::",
     port: 8080,

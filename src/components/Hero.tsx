@@ -11,7 +11,8 @@ export const Hero = () => {
           <div 
             className="h-80 md:h-96 bg-cover bg-center relative"
             style={{
-              backgroundImage: `url('/pic-uploads/db708974-9e3f-400b-9a39-5e24f5328f21.png')`,
+              // backgroundImage: `url('/pic-uploads/db708974-9e3f-400b-9a39-5e24f5328f21.png')`,
+              backgroundImage: `url('${import.meta.env.BASE_URL}pic-uploads/db708974-9e3f-400b-9a39-5e24f5328f21.png')`, 
               imageRendering: 'crisp-edges'
             }}
           >

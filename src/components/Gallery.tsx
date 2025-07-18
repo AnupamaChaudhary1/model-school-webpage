@@ -9,38 +9,75 @@ export const Gallery = () => {
   const [showPhotos, setShowPhotos] = useState(false);
   const [showVideos, setShowVideos] = useState(false);
 
-  const schoolPhotos = [
-    {
-      src: '/pic-uploads/db708974-9e3f-400b-9a39-5e24f5328f21.png',
-      title: 'School Building',
-      description: 'Our beautiful three-story school building'
-    },
-    {
-      src: '/pic-uploads/d8d72e5c-48ed-4886-87ab-1165f07c8579.png',
-      title: 'School Building Front View',
-      description: 'Students gathering at the school entrance'
-    },
-    {
-      src: '/pic-uploads/40a0c33b-1d96-466a-9540-69d81e6846c1.png',
-      title: 'Classroom',
-      description: 'Interactive learning environment'
-    },
-    {
-      src: '/pic-uploads/28d6b3f7-dedb-402d-a9b7-a4637badc2b8.png',
-      title: 'Sports Activities',
-      description: 'Karate training and physical education'
-    },
-    {
-      src: '/pic-uploads/8c133eb0-99eb-4026-ae59-6e354781f72c.png',
-      title: 'School Events',
-      description: 'Students participating in school activities'
-    },
-    {
-      src: '/pic-uploads/45b3ce20-369e-400d-8713-b3ad07cc2b2c.png',
-      title: 'Library',
-      description: 'Students reading and studying in our library'
-    }
-  ];
+  // const schoolPhotos = [
+  //   {
+  //     // src: '/pic-uploads/db708974-9e3f-400b-9a39-5e24f5328f21.png',
+  //     src:{`${import.meta.env.BASE_URL}pic-uploads/db708974-9e3f-400b-9a39-5e24f5328f21.png`}, 
+  //     title: 'School Building',
+  //     description: 'Our beautiful three-story school building'
+  //   },
+  //   {
+  //     // src: '/pic-uploads/d8d72e5c-48ed-4886-87ab-1165f07c8579.png',
+  //     src:{`${import.meta.env.BASE_URL}pic-uploads/db708974-9e3f-400b-9a39-5e24f5328f21.png`}, 
+  //     title: 'School Building Front View',
+  //     description: 'Students gathering at the school entrance'
+  //   },
+  //   {
+  //     src: '/pic-uploads/40a0c33b-1d96-466a-9540-69d81e6846c1.png',
+  //     title: 'Classroom',
+  //     description: 'Interactive learning environment'
+  //   },
+  //   {
+  //     src: '/pic-uploads/28d6b3f7-dedb-402d-a9b7-a4637badc2b8.png',
+  //     title: 'Sports Activities',
+  //     description: 'Karate training and physical education'
+  //   },
+  //   {
+  //     src: '/pic-uploads/8c133eb0-99eb-4026-ae59-6e354781f72c.png',
+  //     title: 'School Events',
+  //     description: 'Students participating in school activities'
+  //   },
+  //   {
+  //     src: '/pic-uploads/45b3ce20-369e-400d-8713-b3ad07cc2b2c.png',
+  //     title: 'Library',
+  //     description: 'Students reading and studying in our library'
+  //   }
+  // ];
+
+const schoolPhotos = [
+  {
+    src: `${import.meta.env.BASE_URL}pic-uploads/db708974-9e3f-400b-9a39-5e24f5328f21.png`,
+    title: 'School Building',
+    description: 'Our beautiful three-story school building'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}pic-uploads/d8d72e5c-48ed-4886-87ab-1165f07c8579.png`,
+    title: 'School Building Front View',
+    description: 'Students gathering at the school entrance'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}pic-uploads/40a0c33b-1d96-466a-9540-69d81e6846c1.png`,
+    title: 'Classroom',
+    description: 'Interactive learning environment'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}pic-uploads/28d6b3f7-dedb-402d-a9b7-a4637badc2b8.png`,
+    title: 'Sports Activities',
+    description: 'Karate training and physical education'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}pic-uploads/8c133eb0-99eb-4026-ae59-6e354781f72c.png`,
+    title: 'School Events',
+    description: 'Students participating in school activities'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}pic-uploads/45b3ce20-369e-400d-8713-b3ad07cc2b2c.png`,
+    title: 'Library',
+    description: 'Students reading and studying in our library'
+  }
+];
+
+
 
   const AdminUploadCard = ({ type }: { type: 'photo' | 'video' }) => (
     <Card className="p-8 border-2 border-dashed border-border hover:border-primary transition-colors duration-300 cursor-pointer group bg-gradient-to-br from-muted/50 to-card">

@@ -1,8 +1,8 @@
-# Welcome to your Lovable project
+
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/f84adde4-007c-4c34-aae6-73e4f8ff3c67
+**URL**: https://anupamachaudhary1.github.io/model-school-webpage/
 
 ## How can I edit this code?
 
@@ -56,10 +56,8 @@ This project is built with:
 
 
 
-## Can I connect a custom domain to my Lovable project?
+
 
 Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)

@@ -7,6 +7,7 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   // base: "/", // 👈 Add this line
   base: mode === "production" ? "/model-school-webpage/" : "/",
+  
   server: {
     host: "::",
     port: 8080,

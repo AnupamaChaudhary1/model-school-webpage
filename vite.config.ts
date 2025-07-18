@@ -5,8 +5,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // base: "/", // 👈 Add this line
-  base: mode === "production" ? "/model-school-webpage/" : "/",
+  base: "/", // 👈 Add this line
+  // base: mode === "production" ? "/model-school-webpage/" : "/",
   
   server: {
     host: "::",
